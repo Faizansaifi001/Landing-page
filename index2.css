@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    /* margin: 0; */
+    font-family: sans-serif;
+    color: white;
+    background: no-repeat;
+}
+body{
+    background-image: url(image.jpg);
+    
+    
+    
+}
+
+.main{
+
+    margin: 5% auto;
+    width: 450px;
+    height: 550px;
+    background-color: black;
+    /* opacity: 0.2; */
+    border: 2px solid white;
+    border-radius: 14px;
+    
+}
+div h1{
+    align-items: center;
+    text-align: center;
+}
+.username,
+.useremail,
+ .userpasword{margin-top: 20px;
+    width: 400px;
+    height: 40px;
+   margin-left: 25px;
+   margin-right: 25px;
+   margin-bottom: 10px;
+   text-align: center;
+   font-size: 18px;
+  
+transition: all ;
+border-radius: 10px;
+border: 2px solid white;
+
+
+}
+div button{
+    margin-top: 25px;
+    padding: 7px 7px;
+    font-size: 16px;
+  
+    border-radius: 14px;
+  
+   
+}
+button a{
+    text-decoration: none;
+
+}
+.maindiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.username:focus,
+.useremail:focus,
+.userpasword:focus {
+    width: 400px;
+    animation-name: colorchange ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colorchange {
+    0% {
+        border-color: green;
+        color: green;
+    }
+    10%{
+        border-color: yellow;
+        color: yellow;
+    }
+    30%{
+        border-color: hotpink;
+        color: hotpink;
+
+    }
+    40%{
+        border-color: purple;
+        color: purple;
+    }
+
+    50%{
+        border-color: yellow;
+        color: yellow;
+
+    }
+60%{
+    border-color: cyan;
+    color: cyan;
+}
+70%{
+    border-color: skyblue;
+    color: skyblue;
+}
+
+80%{
+    border-color: pink;
+    color: pink;
+}
+90%{
+    border-color: red;
+    color: red;
+}
+100%{
+    border-color: white;
+    color: white;
+}
+}
+
+@media screen and (max-width:400px){
+    .main{
+        flex-wrap: wrap;
+        width: 390px;
+        height: 600px;
+        box-sizing: border-box;
+    }
+    .inp input{
+        width: 340px;
+        box-sizing: border-box;
+       
+    }
+}
